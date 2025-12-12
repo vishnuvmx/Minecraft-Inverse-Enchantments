@@ -1,0 +1,17 @@
+name: iEnchantX
+version: '1.0'
+main: org.speedrainxd.CustomEnchantsX.iEnchantX
+api-version: '1.21'
+authors: [speedrainxd,lcVMX]
+description: 20 Vanilla+ Enchants
+commands:
+  enchants:
+    description: Opens the custom enchant menu with all levels
+    usage: /enchants
+    permission: customenchantsx.admin
+    permission-message: You do not have permission!
+  ienchant:
+    description: Apply a custom enchant to a player's held item via command
+    usage: /ienchant <player> <enchant> <level>
+    permission: customenchantsx.admin
+    permission-message: You do not have permission!

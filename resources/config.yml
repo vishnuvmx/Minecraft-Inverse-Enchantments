@@ -1,0 +1,120 @@
+gui:
+  menu-title: "&5Custom Enchants Menu (Click to get)"
+  book-display-format: "&6{enchant}"
+  book-lore-format: "{enchant} {level}"
+
+messages:
+  players-only: "Players only!"
+  no-permission: "&cOnly server operators can use this command!"
+  menu-opened: "&aEnchants menu opened!"
+  book-taken: "&aYou took {enchant}"
+  enchant-usage: "&cUsage: /ienchant <player> <enchant> <level>"
+  enchant-example: "&7Example: /ienchant @p Experience 3"
+  enchant-available: "&7Available enchants: {enchants}"
+  enchant-invalid-level: "&cInvalid level: {level}"
+  enchant-no-players: "&cNo players found matching: {player}"
+  enchant-not-found: "&cEnchant not found: {enchant}"
+  enchant-max-level: "&c{enchant} only supports levels 1-{max}"
+  enchant-no-item: "&cYou must be holding an item!"
+  enchant-applied: "&a✓ Applied &6{enchant} {level} &ato your item!"
+  enchant-applied-broadcast: "&a✓ Applied &6{enchant} {level} &ato {count} player(s)!"
+  plugin-enabled: "iEnchantX enabled! Use /enchants to see the books."
+  enchants-available: "Enchants available: {count}"
+
+villager-trading:
+  enabled: true
+  trade-chance: 10
+  max-trades: 20
+  emerald-cost-min: 10
+  emerald-cost-max: 20
+  require-book-input: true
+
+enchant-levels:
+  three-level:
+    - "Experience"
+    - "Life_Steal"
+    - "Bleeding"
+    - "Speed_Boost"
+    - "Vitality"
+    - "Agility"
+  two-level:
+    - "Aura_Damage"
+    - "Magnetic"
+  one-level:
+    - "End_Slayer"
+    - "Axe_Breach"
+    - "Sword_Breach"
+    - "Withering"
+    - "Frost_Aspect"
+    - "Beheading"
+    - "Tank"
+    - "Night_Owl"
+    - "Lavawalker"
+    - "Melting"
+    - "Vein_Miner"
+    - "Timber"
+    - "Telepathy"
+
+enchant-mechanics:
+  experience:
+    enabled: true
+    xp-multiplier-per-level: 1
+  life-steal:
+    enabled: true
+    hearts-per-level: 0.5
+  bleeding:
+    enabled: true
+    damage-per-level: 0.10
+    poison-duration-base: 40
+    poison-amplifier-per-level: 1
+  axe-breach:
+    enabled: true
+    base-multiplier: 1.1
+    per-level-bonus: 0.05
+  sword-breach:
+    enabled: true
+    base-multiplier: 1.1
+    per-level-bonus: 0.05
+  end-slayer:
+    enabled: true
+    bonus-damage-per-level: 3.0
+  beheading:
+    enabled: true
+    drop-chance-per-level: 33
+  agility:
+    enabled: true
+    dodge-chance-per-level: 10
+  tank:
+    enabled: true
+    reduction-per-level: 0.15
+  aura-damage:
+    enabled: true
+    burn-chance-per-level: 20
+    base-fire-ticks: 60
+    per-level-ticks: 20
+  magnetic:
+    enabled: true
+    base-radius: 5
+    per-level-radius: 3
+  vitality:
+    enabled: true
+    hearts-per-level: 2.0
+  speed-boost:
+    enabled: true
+  vein-miner:
+    enabled: true
+    max-blocks: 20
+  timber:
+    enabled: true
+    max-blocks: 100
+  passive-effects-tick-rate: 40
+
+anvil:
+  enabled: true
+  allow-upgrades: true
+  allow-new-enchants: true
+
+debug:
+  enabled: false
+  log-enchants: true
+  log-commands: true
